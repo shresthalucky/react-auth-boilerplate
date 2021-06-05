@@ -5,5 +5,5 @@ export interface locationStateType {
 }
 
 export interface userType {
-  isValid: boolean;
+  isAuthenticated: boolean;
 }

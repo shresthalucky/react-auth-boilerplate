@@ -11,7 +11,7 @@ const Login: React.FC<PropTypes> = ({ user }) => {
   const location = useLocation<locationStateType>();
   const { from } = location.state || { from: { pathname: '/' } };
 
-  if (user.isValid) {
+  if (user.isAuthenticated) {
     return <Redirect to={from} />;
   }
 

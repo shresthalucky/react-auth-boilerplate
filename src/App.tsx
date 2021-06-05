@@ -5,7 +5,7 @@ import { userType } from './types';
 
 const App = () => {
   const user: userType = {
-    isValid: true, // true for valid user and false for invalid user
+    isAuthenticated: true, // true for valid user and false for invalid user
   };
 
   return <Routes user={user} />;
